@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hotel Star Palace(Room) </title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+<!--TABLE -->	
+	
+<style>
+table {
+    width:60%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+	
+</head>
+
+
+<body  >
+
+<section id="first">
+    <div class="container">
+	                                  <center><h1 style="font-family: Aristocrat;color:#45171d">Room Reservation System</h1></center>
+	    <div class="full-width">
+		     <!--Logo-->
+		    <div class="logo">
+			     <img src="images/ash.png" width="150" hight="150"/>
+				 <h4 style="color:#45171d">Room Reservation System</h4>
+			</div>
+			<!--Menu-->
+			<div class="menu">
+			<ul>
+			     <li><a href="home.html">Home</a></li>
+				 <li><a href="Room.html">Room</a></li>
+			     <li><a href="viewdata.php">View</a></li>
+				 <li><a href="search.php">Search</a></li>
+				 <li><a href="report.php">Report</a></li>
+		    </ul>
+		</div>   
+	</div>
+</section>
+
+                                 <!--Menu End-->
+<div style="background-color:#fecea8;  padding:4px; width:80%;hight: 500px; margin:0 auto;" align="middle"> <!--Block style-->
+
+<h1 style="color:White">Room Details:</h1>
+
+<hr style="color:green"/>
+ 
+
+                                   <!--TABLE START-->
+								   
+<br>
+<table id="t01">
+  <tr>
+    <th>Room Number:</th>
+    <th>Room Type</th>
+    <th>Room Price</th>
+    
+  </tr>
+  <tr>
+    <th>01-10</th>
+    <td>Presidential Suite</td>
+    <td>50,000TK/day</td>
+  </tr>
+  <tr>
+    <th>11-20</th>
+    <td>Front Deluxe Supreme</td>
+    <td>30,000TK/day</td>
+	
+    
+  </tr>
+  <tr>
+    <th>21-30</th>
+    <td>Super Deluxe Triple</td>
+    <td>20,000TK/day</td>
+    
+  </tr>
+  
+  <tr>
+    <th>31-40</th>
+    <td>Economy Deluxe</td>
+    <td>10,000TK/day</td>
+    
+  </tr>
+</table>								   
+<br><br>								   
+								   
+
+<h1 style="color:White">Room Reservation:</h1>
+
+<hr style="color:green"/><br>
+                                 <!--TABLE START 2---->
+
+<table>
+	<section class="phpcoding">
+	
+    <form action="insert.php" method="POST">
+	    <tr><th>Client_id:</th><td>   <input type="text" name="a" ></td></tr>
+        <tr><th>Room_number:</th><td>   <input type="text" name="b"></td></tr>
+        <tr><th>Room_type:</th><td>     <input type="text" name="c"></td></tr>
+		<tr><th>Bed_size:</th><td>      <input type="text" name="d"   value="single/Double"></td></tr>
+		<tr><th>Number_of_Room:</th><td> <input type="text" name="e"></td></tr>
+		
+ 
+        <tr><td></td><td><input type="submit" value="submit"></td></tr>
+    </form>
+    </section>
+	</table>		 
+					
+					
+					
+					
+	
+
+ <!--TABLE START end---->
+
+	
+</div>
+
+<!--footer-->
+<footer id="footer">
+     <p>@all rights reserved by B.M.Ashik Mahmud / ID: 15103052</p>
+</footer>	<!--footer end-->						
+							  
+</body>
+</html>
